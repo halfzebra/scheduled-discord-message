@@ -11,3 +11,5 @@ In this project I've decided to experiment with graceful shutdown of an app by r
 - https://rust-lang.github.io/async-book/06_multiple_futures/02_join.html
 - https://rust-lang.github.io/async-book/06_multiple_futures/03_select.html
 - https://github.com/mvniekerk/tokio-cron-scheduler/issues/2
+- https://github.com/thoo0224/webhook-rs
+- https://docs.serde.rs/serde_json
