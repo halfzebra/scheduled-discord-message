@@ -1048,6 +1048,7 @@ dependencies = [
 [[package]]
 name = "tokio-cron-async"
 version = "0.1.0"
+source = "git+https://github.com/halfzebra/tokio-cron-async?branch=main#b5c30b26b22fabc86646c230509d60b35bcae3b4"
 dependencies = [
  "chrono",
  "cron",

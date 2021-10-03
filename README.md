@@ -1,6 +1,6 @@
 # scheduled-discord-message
 
-This project serves as a starting poing for an app, which can send Discord messages to a Webhook endpoint.
+This repository , which can send Discord messages to a Webhook endpoint.
 
 ## Usage
 
@@ -24,7 +24,6 @@ Then run:
 ```bash
 cargo run -- -c ./tasks.json
 ```
-
 
 ## Motivation
 

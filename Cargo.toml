@@ -7,12 +7,16 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-tokio = { version = "1.10.0", features = ["full"] }
-# tokio-cron-async = { git = "https://github.com/halfzebra/tokio-cron-async", branch = "main" }
-tokio-cron-async = { path = "../tokio-experiment" }
+tokio = { version = "1.10.0", features = ["macros", "fs"] }
+tokio-cron-async = { git = "https://github.com/halfzebra/tokio-cron-async", branch = "main" }
+# tokio-cron-async = { path = "../tokio-experiment" }
 chrono = "0.4"
 reqwest = { version = "0.11", features = ["json"] }
 futures = "0.3.17"
 serde =  { version = "1.0.130", features = ["derive"] }
 serde_json = "1.0.68"
 structopt = "0.3"
+
+[profile.release]
+opt-level = "z"
+lto = true
