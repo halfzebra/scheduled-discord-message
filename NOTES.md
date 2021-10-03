@@ -1,5 +1,7 @@
 # Notes
 
+This document contains notes from the development process.
+
 ## Discord Webhook
 
 - https://birdie0.github.io/discord-webhooks-guide/index.html
@@ -14,6 +16,15 @@ In this project I've decided to experiment with graceful shutdown of an app by r
 - https://github.com/thoo0224/webhook-rs
 - https://docs.serde.rs/serde_json
 
+
+## Building for Raspberry Pi
+
+This CLI runs on a Raspberry Pi, so I needed some guidance on building it for ARM:
+
+- https://medium.com/swlh/compiling-rust-for-raspberry-pi-arm-922b55dbb050
+
 ## Reducing binary size
+
+The default config produced a 4MB binary, which is a bit too much.
 
 - https://github.com/johnthagen/min-sized-rust

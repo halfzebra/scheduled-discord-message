@@ -22,7 +22,10 @@ Create a file `tasks.json`:
 Then run:
 
 ```bash
-cargo run -- -c ./tasks.json
+cargo build --relase
+
+# Don't forget to update the URL
+./target/release/scheduled-discord-message -c ./examples/tasks.json
 ```
 
 ## Motivation
@@ -35,4 +38,3 @@ The hypothesis is that Rust allows that, but the benchmark is to be implemented.
 ## Related links
 
 - https://github.com/halfzebra/tokio-cron-async
-- https://medium.com/swlh/compiling-rust-for-raspberry-pi-arm-922b55dbb050
