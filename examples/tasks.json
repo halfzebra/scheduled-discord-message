@@ -1,0 +1,10 @@
+[
+  {
+    "url": "<discord-webhook-url>",
+    "schedule": "0 37 13 * * *",
+    "webhook": {
+      "username": "Sally",
+      "content": "Time for the daily Sally!"
+    }
+  }
+]

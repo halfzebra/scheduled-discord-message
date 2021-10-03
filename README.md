@@ -1,6 +1,30 @@
 # scheduled-discord-message
 
-This project serves as a starting poing for an app, which can send Discord messages to a Webhook endppoint.
+This project serves as a starting poing for an app, which can send Discord messages to a Webhook endpoint.
+
+## Usage
+
+Create a file `tasks.json`:
+
+```json
+[
+  {
+    "url": "<discord-webhook-url>",
+    "schedule": "0 37 13 * * *",
+    "webhook": {
+      "username": "Sally",
+      "content": "Time for the daily Sally!"
+    }
+  }
+]
+```
+
+Then run:
+
+```bash
+cargo run -- -c ./tasks.json
+```
+
 
 ## Motivation
 
